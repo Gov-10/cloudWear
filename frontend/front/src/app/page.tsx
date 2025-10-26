@@ -16,7 +16,7 @@ export default function Home() {
     if (!city.trim()) return alert('Enter a city name');
     setLoading(true);
     try {
-      const res = await fetch('https://dreadful-monster-r4r697r97656f5g6v-8000.app.github.dev/suggest', {
+      const res = await fetch('https://cloudwear-1.onrender.com/suggest', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ city }),
