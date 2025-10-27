@@ -4,6 +4,7 @@ from concurrent.futures import ThreadPoolExecutor
 from dotenv import load_dotenv
 load_dotenv()
 from fastapi import FastAPI
+import uvicorn
 # Thread executor for blocking Strands agent calls
 executor = ThreadPoolExecutor(max_workers=3)
 
@@ -107,4 +108,5 @@ async def consume():
 
 if __name__ == "__main__":
     logger.info("🚀 CloudWear Worker starting up...")
+    uvicorn.run(app, host="0.0.0.0", port=8080)
     asyncio.run(consume())
