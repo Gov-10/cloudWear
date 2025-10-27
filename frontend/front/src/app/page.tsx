@@ -19,7 +19,7 @@ export default function Home() {
     setShowResult(false);
     
     try {
-      const res = await fetch('https://fastapi-backend-777268942678.europe-west1.run.app/suggest', {
+      const res = await fetch('https://cloudwear-1.onrender.com/suggest', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ city }),
