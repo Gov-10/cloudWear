@@ -24,3 +24,113 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* === CloudWear AI: Advice Content Styling === */
+.advice-content {
+  word-wrap: break-word;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+/* Text formatting */
+.advice-content strong,
+.advice-content b {
+  color: #7c3aed;
+  font-weight: 700;
+}
+
+.advice-content em,
+.advice-content i {
+  color: #db2777;
+  font-style: italic;
+}
+
+/* Highlight blocks */
+.advice-content mark,
+.advice-content .highlight {
+  background: linear-gradient(120deg, #fbbf24 0%, #f59e0b 100%);
+  color: #1f2937;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(251, 191, 36, 0.3);
+}
+
+/* Paragraphs */
+.advice-content p {
+  margin: 0.9rem 0;
+  line-height: 1.75;
+}
+
+/* Lists */
+.advice-content ul,
+.advice-content ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.advice-content li {
+  margin: 0.4rem 0;
+  position: relative;
+}
+
+.advice-content ul li::marker {
+  color: #8b5cf6;
+}
+
+/* Links */
+.advice-content a {
+  color: #7c3aed;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.advice-content a:hover {
+  color: #db2777;
+}
+
+/* Inline code blocks */
+.advice-content code {
+  background: #f3f4f6;
+  color: #7c3aed;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+/* Headings inside advice */
+.advice-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4c1d95;
+  margin-top: 1.5rem;
+}
+
+.advice-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6d28d9;
+  margin-top: 1rem;
+}
+
+/* Divider */
+.advice-content hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #8b5cf6, #ec4899);
+  margin: 1.5rem 0;
+  border-radius: 1px;
+}
+
+/* Quotes / tips */
+.advice-content blockquote {
+  border-left: 4px solid #8b5cf6;
+  background: rgba(124, 58, 237, 0.05);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  color: #4b5563;
+  font-style: italic;
+}
