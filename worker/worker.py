@@ -3,6 +3,7 @@ from agents.agent import agent
 from concurrent.futures import ThreadPoolExecutor
 from dotenv import load_dotenv
 load_dotenv()
+from fastapi import FastAPI
 # Thread executor for blocking Strands agent calls
 executor = ThreadPoolExecutor(max_workers=3)
 
@@ -13,6 +14,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger("cloudwear_worker")
 
+app = FastAPI()
+@app.get("/check")
+async def check():
+    return {"health": "Okay"}
 
 async def process_city(city: str, timeout: int = 25):
     """
