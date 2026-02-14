@@ -1,4 +1,6 @@
 # cloudWear
+# THE LIVE PREVIEW OF THIS PROJECT IS CURRENTLY DOWN DUE TO CLOUD PROVIDER ACCOUNT ISSUES, SORRY FOR THE INCONVENIENCE CAUSED 
+
 ## Description
 CloudWear AI is a fun project made using AWS Strands agents, fastAPI, NextJS, AWS Lambda functions and Amazon API Gateway. This witty AI agent fetches real time weather and searches for tourist attractions based on the user's entered city. 
 
